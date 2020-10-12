@@ -1,0 +1,16 @@
+Paying attention to astronomy data.
+In this project the student will introduce attention gates into CNN based machine learning classification for radio astronomy. Previous work has shown that that enforcing a more focused and selective use of image information through the use of attention gates can not only be used to improve classification outcomes, but can also be used to help generalise over changes in data distribution, for instance when training on one dataset and testing on another. The student will examine whether the inclusion of trainable soft attention can be used to improve cross-survey transfer learning for radio astronomy. Examining changes in the attention distributions between classifiers trained on different datasets will enable the student to characterise the operation of the different convolutional layers, and by visualising attention distributions we can not only optimise network architectures for specific classification problems, but also isolate layers that contribute to different biases.
+
+The soft attention method is fully differentiable, which means that the entire network can still be trained end-to-end using a standard back-propagation; however, for interferometric images, the definition of the attention model is expected to require refinement. Applications to medical imaging data, which is similar in nature to radio astronomy data, have shown that the standard linear compatibility functions used in many attention gates are overly sensitive to noise fluctuations and inhomogeneities in the images. Moreover the soft attention method has been found to be inappropriate for complicated classification cases, where objects involve significant variations in their scale and shape and the student will also assess the limitations of using soft-attention with radio astronomy data.
+
+Work Plan:
+Adapt network from arXiv:1903.11921 to include classical attention gates;
+Adapt network from arXiv:1903.11921 to include sononet attention gates;
+Compare performance of (1) & (2);
+Examine spatial attention differences between FIRST and NVSS datasets;
+Implement distraction gates to map spatial regions that detract from accurate classification;
+Examine spatial distribution of distraction to determine optimal region size for NVSS/FIRST samples.
+Potential publications
+MNRAS (or similar) astronomy paper on FR classification using astronomy
+NIPS (or similar) paper on dynamic image resizing based on distraction
+[Potential extension] NIPS (or similar) paper on Bayesian attention gates using weighted compatibility functions
