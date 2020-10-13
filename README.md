@@ -23,7 +23,7 @@ In the [PYTHON](PYTHON/) folder, there are a number of files that are of interes
 - [Training](PYTHON/training2.py) this is the training function called by [TrainModels.ipynb](PYTHON/TrainModels.ipynb), and was used for each of the presented models.
 - [Train models](PYTHON/TrainModels.ipynb) this file demonstrates the function calls used to train each of the models.
 - [utils.py](PYTHON/utils.py) contains (most) of the helper functions defined for this project, including evaluations, attention map extractions and plots.
-- [Evaluating All Trained Models](PYTHON/EvaluatingAllTrainedModels.ipynb) will not run entirely without some modification. It was used to keep track of the improvements of various models throughout my research process.
+- [Evaluating All Trained Models](PYTHON/EvaluatingAllTrainedModels.ipynb) will not run entirely without some modification. It was used to keep track of the improvements of various models throughout my research process. These results were saved and can be found in the set of .pickle files in the [PYTHON](PYTHON/) folder.
 
 ## Results
 
@@ -47,7 +47,7 @@ As well as for distributions of sources, such as:
 ![Confusion Matrix Format](images/Exp4_confusion_matrix.png)
 
 ## Usage
-The trained models can be found in [this folder](PYTHON/) and are configured according to their file names. The models are trained on classifying radio galaxies between the two classes of FRI and FRII, and this is **all** of what they are meant to do.
+The trained models can be found in [this folder](PYTHON/) and are configured according to their file names. The models are trained on classifying radio galaxies between the two classes of FRI and FRII (and this is **all** they do).
 
 To load the proposed model:
 ```python
