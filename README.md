@@ -34,7 +34,11 @@ Attention gates can be investigated for individual sources. The sources and the 
 ![Attention throughout training of model](images/Exp1_Epochs.png)
 
 For the aggregation and normalisation investigation ([experiment2.ipynb](PYTHON/experiment2.ipynb)), the following arrays of attention maps are produced:
+
 ![Aggregation and Normalisation Investigation Attention Maps](images/Exp2_FRI.png)
+
+FRI above, FRII below.
+
 ![Aggregation and Normalisation Investigation Attention Maps](images/Exp2_FRII.png)
 
 One of the benefits of radio astronomy data being used for CNN classification, is that the object of interest can be classified (statistically) on its radial distribution. Thus by averaging the images across the entire data sets, and their respective attention maps, we can visualise how the attention is distributed on a set of images:
