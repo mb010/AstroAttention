@@ -10,7 +10,7 @@ The implemented network follows [Jetley (2018)](https://arxiv.org/abs/1804.02391
 The network contains (at most) ~101k parameters, and can be visualised as follows:
 ![Attention Gated CNN](images/AG-CNN_network.png)
 
-The attention gates are convolutional functions with two inputs. One from the final convolutional layer ($g$) and an input from an earlier layer ($x$). This calculates a scaling map (attention map / compatibility score), which scales input $x$. This is then used for the final classification. More details are seen in section 2.2 of the respective paper. The attention gate is visualised as:
+The attention gates are convolutional functions with two inputs. One from the final convolutional layer (__*g*__) and an input from an earlier layer (__*x*__). This calculates a scaling map (attention map / compatibility score), which scales the input __*x*__. This is then used for the final classification. More details are seen in section 2.2 of the respective paper. The attention gate is visualised as:
 ![Attention Gate](images/AttentionGate.png)
 
 ## Files
