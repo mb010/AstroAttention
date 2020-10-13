@@ -8,7 +8,7 @@ The network implemented was adapted from [Ozan-Oktay's Github](https://github.co
 The implemented network follows [Jetley (2018)](https://arxiv.org/abs/1804.02391).
 
 The network contains (at most) ~101k parameters, and can be visualised as follows:
-![Attention Gated CNN](images/AG-CNN_architecture.png)
+![Attention Gated CNN](images/AG-CNN_network.png)
 
 The attention gates are convolutional functions with two inputs. One from the final convolutional layer ($g$) and an input from an earlier layer ($x$). This calculates a scaling map (attention map / compatibility score), which scales input $x$. This is then used for the final classification. More details are seen in section 2.2 of the respective paper. The attention gate is visualised as:
 ![Attention Gate](images/AttentionGate.png)
@@ -29,16 +29,17 @@ In the [PYTHON](PYTHON/) folder, there are a number of files that are of interes
 
 Attention shows similar performance to the state of the art. The literature suggests, that this should have given a boost in performance over classic-CNN models. This discrepency is thought to arise due to the limited data sizes and the nature of the labeled data itself.
 
-Attention gates can be investigated for individual sources. The sources and the attention gates for the proposed model ([experiment1](PYTHON/experiment1.ipynb)):
-![Initial attention for example sources](images/Exp1_example_sources.png)
+Attention gates can be investigated for individual sources. The sources and the attention gates for the proposed model ([experiment1.ipynb](PYTHON/experiment1.ipynb)):
+![Initial attention for example sources](images/Exp1_example_attention.png)
+![Attention throughout training of model](images/Exp1_Epochs.png)
 
 For the aggregation and normalisation investigation ([experiment2.ipynb](PYTHON/experiment2.ipynb)), the following arrays of attention maps are produced:
-![Aggregation and Normalisation Investigation Attention Maps](images/Exp2_FRI_array.png)
-![Aggregation and Normalisation Investigation Attention Maps](images/Exp2_FRII_array.png)
+![Aggregation and Normalisation Investigation Attention Maps](images/Exp2_FRI.png)
+![Aggregation and Normalisation Investigation Attention Maps](images/Exp2_FRII.png)
 
 One of the benefits of radio astronomy data being used for CNN classification, is that the object of interest can be classified (statistically) on its radial distribution. Thus by averaging the images across the entire data sets, and their respective attention maps, we can visualise how the attention is distributed on a set of images:
 As well as for distributions of sources, such as:
-![Distribution Epochs](images/Exp4_epochs.png)
+![Distribution Epochs](images/Exp4_epoch.png)
 ![Confusion Matrix Format](images/Exp4_confusion_matrix.png)
 
 ## Usage
