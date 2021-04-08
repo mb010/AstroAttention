@@ -1,6 +1,6 @@
 # AstroAttention
 Learned attention for radio astronomy. 
-This is the code used for Bowles (2020): "Attention-gating for improved radio galaxy classification".
+This is the code used for [Bowles (2021)](https://arxiv.org/abs/2012.01248): "Attention-gating for improved radio galaxy classification".
 
 The network implemented was adapted from [Ozan-Oktay's Github](https://github.com/ozan-oktay/Attention-Gated-Networks).
 
